@@ -1,0 +1,144 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /** Reset para REMS - 62.5% = 10px de 16px **/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 120rem; /** = 1200px; **/
+    margin: 0 auto;
+}
+
+.seccion {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+/* Header */
+.site-header {
+    background-color: #333333;
+    padding: 1rem 0 3rem 0;
+}
+.site-header.inicio {
+    background-image: url(../img/pexels-pixabay-276514.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 60rem;
+}
+.contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .contenido-header{
+        text-align: left;
+    }
+}
+.contenido-header h1 {
+	font-family: 'Architects Daughter', cursive;
+    color: #f8e0a4;
+    padding-bottom: 2rem;
+    font-size: 7rem;
+    max-width: 80rem;
+    line-height: 1;
+}
+.barra {
+    padding-top: 3rem;
+}
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/** Navegacion **/
+.navegacion a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2.2rem;
+    display: block;
+}
+@media (min-width: 768px) {
+    .navegacion a {
+        display: inline-block;
+        font-size: 1.8rem; /** = 18px **/
+        margin-right: 2rem;
+    }
+    .navegacion a:last-of-type {
+        margin: 0;
+    }
+}
+.navegacion a:hover {
+    color: gray;
+}
+
+/** Mobile Menu **/
+.mobile-menu img {
+    width: 5rem;
+}
+@media (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+.navegacion:target {
+    display: block;
+}
+.navegacion {
+    display: none;
+}
+@media (min-width: 768px) {
+    .navegacion {
+        display: block;
+    }
+}
+.barra p {
+    font-size: 3rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/** Iconos Nosotros **/
+@media (min-width: 768px) {
+    .iconos-aprender {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .iconos-aprender div i {
+    	font-size: 7rem;
+    }
+
+    .iconos-aprender div p {
+    	font-size: 2rem;
+    }
+}
+.icono {
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .icono {
+        flex-basis: calc(33.3% - 1rem);
+    }
+}
+.icono h3 {
+    text-transform: uppercase;
+}
+
+section h2, h3 {
+	text-align: center;
+	font-size: 3rem;
+}
